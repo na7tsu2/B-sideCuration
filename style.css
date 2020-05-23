@@ -1,0 +1,157 @@
+p.font1{
+	font-family: 'Wawati SC',sans-serif;
+}
+
+.cp_tab *, .cp_tab *:before, .cp_tab *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_tab {
+	margin: 1em auto;
+}
+.cp_tab > input[type='radio'] {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	        appearance: none;
+	display: none;
+}
+.cp_tab .cp_tabpanel {
+	display: none;
+}
+.cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child,
+.cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2),
+.cp_tab > input:nth-child(5):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(3),
+.cp_tab > input:nth-child(7):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(4),
+.cp_tab > input:nth-child(9):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(5),
+.cp_tab > input:nth-child(11):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(6),
+.cp_tab > input:nth-child(13):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(7),
+.cp_tab > input:nth-child(15):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(8),
+.cp_tab > input:nth-child(17):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(9),
+.cp_tab > input:nth-child(19):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(10)
+{
+	display: block;
+}
+.cp_tab > label {
+	font-family: 'Wawati SC',sans-serif;
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-bottom: 0;
+}
+.cp_tab > label:hover,
+.cp_tab > input:focus + label {
+	color: #0066cc;
+}
+.cp_tab > input:checked + label {
+	margin-bottom: -1px;
+	border-color: #cccccc;
+	border-bottom: 1px solid #ffffff;/*背景色と同じ*/
+	border-radius: 6px 6px 0 0;
+}
+.cp_tab .cp_tabpanel {
+	padding: 0.5em 1em;
+	border-top: 1px solid #cccccc;
+}
+@media (max-width: 480px) {
+	.cp_tab {
+		width: 100%;
+		font-size: 0.8em;
+	}
+	.cp_tab label {
+		padding: 0.5em;
+	}
+}
+
+.tab-wrap {
+    font-family: 'Wawati SC',sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-label {
+    color: White;
+    background: LightGray;
+    margin-right: 5px;
+    padding: 3px 12px;
+    order: -1;
+    border-radius: 50px;
+
+}
+.tab-content {
+    width: 100%;
+    display: none;
+}
+
+/* 下線非表示 */
+a {
+  color : black;
+  text-decoration:none;
+}
+
+/* アクティブなタブ */
+/*.tab-switch:checked+.tab-label {
+    background: Purple;
+}*/
+
+.tab-switch:checked+.tab-label+.tab-content {
+     display: block;
+}
+
+/* ラジオボタン非表示 */
+.tab-switch {
+    display: none;
+}
+
+figure.gazo-box {
+float: left;
+padding-right: 20px;
+}
+
+.box1 {
+    font-family: 'Wawati SC',sans-serif;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px black;
+}
+.box1 p {
+    margin: 0;
+    padding: 0;
+}
+
+/*ログイン*/
+body,p,form,input{margin: 0}
+#form{
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #555;
+    }
+
+form p{
+    font-size: 14px;
+    }
+
+.form-title{
+    text-align: center;
+    }
+
+.mail,.pass{
+    margin-bottom: 20px;
+    }
+
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    padding: 4px;
+    font-size: 14px;
+    }
+
+.submit{
+    text-align: right;
+    }
